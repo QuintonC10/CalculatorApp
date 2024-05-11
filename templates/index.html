@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask Calculator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Flask Calculator</h1>
+    <form action="/add/{{ num1 }}/{{ num2 }}">
+        <input type="text" name="num1" placeholder="Enter first number">
+        <input type="text" name="num2" placeholder="Enter second number">
+        <button type="submit">Add</button>
+    </form>
+    <p>Result: {{ result }}</p>
+</body>
+</html>
+
